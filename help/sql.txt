@@ -1,0 +1,19 @@
+drop database if exists bookstore;
+create database bookstore;
+use bookstore;
+create table t_user(
+        id int(11) primary key auto_increment,
+        username varchar(20) not null unique,
+        password varchar(32) not null,
+        email varchar(200)
+        );
+
+
+
+INSERT INTO t_user(username,PASSWORD,email) VALUES("admin","admin","admin@aplux.net");
+select * from t_user
+
+
+G:\我的雲端硬碟\public\project\book\src\jdbc.properties
+
+G:\我的雲端硬碟\public\project\book\out\production\book\jdbc.properties

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>測試頁面</title>
+    <base href="http://localhost:8080/bookstore/">
+</head>
+<body>
+<div class="form">
+    <form action="registerServlet" method="post">
+        <label>用戶名稱：</label>
+        <input class="itxt" type="text" placeholder="請輸入用户名"
+               autocomplete="off" tabindex="1" name="username" id="username" />
+        <br />
+        <br />
+        <label>用戶密碼：</label>
+        <input class="itxt" type="password" placeholder="請輸入密碼"
+               autocomplete="off" tabindex="1" name="password" id="password" />
+        <br />
+        <br />
+        <label>確認密碼：</label>
+        <input class="itxt" type="password" placeholder="確認密碼"
+               autocomplete="off" tabindex="1" name="repwd" id="repwd" />
+        <br />
+        <br />
+        <label>電子郵件：</label>
+        <input class="itxt" type="text" placeholder="請輸入電子郵件地址"
+               autocomplete="off" tabindex="1" name="email" id="email" />
+        <br />
+        <br />
+        <label>驗證碼：</label>
+        <input class="itxt" type="text" name="code" style="width: 150px;" id="code"/>
+        <img alt="" src="static/img/code.bmp" style="float: right; margin-right: 40px">
+        <br />
+        <br />
+        <input type="submit" value="註冊" id="sub_btn" />
+    </form>
+</div>
+</body>
+</html>
