@@ -25,11 +25,11 @@ public class loginServlet extends HttpServlet
         if(userService.loginUser(username,password)!=null)
         {
             System.out.println("用戶名["+username+"]登錄成功");
-            request.getRequestDispatcher("/pages/user/login_success.html").forward(request,response);
+            request.getRequestDispatcher("/pages/user/login_success.jsp").forward(request,response);
         }else
         {
             System.out.println("用戶名["+username+"]登錄失敗");
-            request.getRequestDispatcher("/pages/user/login.html").forward(request,response);
+            request.getRequestDispatcher("/pages/user/login.jsp").forward(request,response);
         }
     }
 
